@@ -101,9 +101,6 @@ const Palette = {
   lightColor: {
     LightColor: "#F0F1ED",
   },
-};
-
-const SemanticPalette = {
   info: {
     InfoColor: "#231c28",
     InfoColorShade10: "#201924",
@@ -125,3 +122,5 @@ const SemanticPalette = {
     DangerColorTint80: "#fdd9d7",
   },
 };
+
+export default Palette;

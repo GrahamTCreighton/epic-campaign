@@ -1,30 +1,41 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import { Button } from './Button';
-import './header.css';
+import { Button } from "./Button";
+import white_logo_color_background from "./designAssets/DesignAssetsLogosVertical";
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
+export const Header = ({
+  user,
+  mode,
+  dark,
+  light,
+  onLogin,
+  onLogout,
+  onCreateAccount,
+}) => (
   <header>
     <div className="wrapper">
+      <img src={white_logo_color_background} />
+      <div>CAMPAIGN</div>
+      <div>CHARACTERS</div>
+      <div>WORLDBUILDING</div>
+      <div>BLOG</div>
+      <div>DICE</div>
+      <div>PURCHASE</div>
       <div>
-        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-          <g fill="none" fillRule="evenodd">
-            <path
-              d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
-              fill="#FFF"
-            />
-            <path
-              d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z"
-              fill="#555AB9"
-            />
-            <path
-              d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z"
-              fill="#91BAF8"
-            />
-          </g>
-        </svg>
-        <h1>Acme</h1>
+        {mode ? (
+          <>
+            <span className="dark" onClick={dark}>
+              DARK
+            </span>
+          </>
+        ) : (
+          <>
+            <span className="light" onClick={light}>
+              LIGHT
+            </span>
+          </>
+        )}
       </div>
       <div>
         {user ? (
@@ -37,7 +48,12 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
         ) : (
           <>
             <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
+            <Button
+              primary
+              size="small"
+              onClick={onCreateAccount}
+              label="Sign up"
+            />
           </>
         )}
       </div>
@@ -46,6 +62,9 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
 );
 
 Header.propTypes = {
+  mode: PropTypes.any,
+  light: PropTypes.any,
+  dark: PropTypes.any,
   user: PropTypes.shape({}),
   onLogin: PropTypes.func.isRequired,
   onLogout: PropTypes.func.isRequired,
