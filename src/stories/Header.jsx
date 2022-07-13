@@ -1,42 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
-
+{
+  "presets": ["@emotion/babel-preset-css-prop"]
+}
+import {css} from "@emotion/react"
 import { Button } from "./Button";
-import white_logo_color_background from "./designAssets/DesignAssetsLogosVertical";
+import white_logo_color_background from "./designAssets/DesignAssetsLogosVertical/white_logo_color_background.jpg";
 
-export const Header = ({
-  user,
-  mode,
-  dark,
-  light,
-  onLogin,
-  onLogout,
-  onCreateAccount,
-}) => (
+export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <header>
     <div className="wrapper">
-      <img src={white_logo_color_background} />
+      <img css={{
+        maxHeight: "150px",
+        maxWidth: "150px",
+      }} src={white_logo_color_background} />
       <div>CAMPAIGN</div>
       <div>CHARACTERS</div>
       <div>WORLDBUILDING</div>
       <div>BLOG</div>
       <div>DICE</div>
       <div>PURCHASE</div>
-      <div>
-        {mode ? (
-          <>
-            <span className="dark" onClick={dark}>
-              DARK
-            </span>
-          </>
-        ) : (
-          <>
-            <span className="light" onClick={light}>
-              LIGHT
-            </span>
-          </>
-        )}
-      </div>
+      <div>DARK</div>
       <div>
         {user ? (
           <>
@@ -62,9 +46,6 @@ export const Header = ({
 );
 
 Header.propTypes = {
-  mode: PropTypes.any,
-  light: PropTypes.any,
-  dark: PropTypes.any,
   user: PropTypes.shape({}),
   onLogin: PropTypes.func.isRequired,
   onLogout: PropTypes.func.isRequired,
