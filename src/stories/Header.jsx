@@ -1,19 +1,29 @@
+/** @jsxImportSource @emotion/react */
 import React from "react";
 import PropTypes from "prop-types";
-{
-  "presets": ["@emotion/babel-preset-css-prop"]
-}
-import {css} from "@emotion/react"
-import { Button } from "./Button";
+
 import white_logo_color_background from "./designAssets/DesignAssetsLogosVertical/white_logo_color_background.jpg";
+import Palette from "./designAssets/DesignAssetsColors";
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <header>
-    <div className="wrapper">
-      <img css={{
-        maxHeight: "150px",
-        maxWidth: "150px",
-      }} src={white_logo_color_background} />
+    <div
+      css={{
+        fontFamily: "Nunito Sans, Helvetica, Arial, sans-serif",
+        padding: "15, 20",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "spaceBetween",
+        backgroundColor: "#c3073f",
+      }}
+    >
+      <img
+        css={{
+          maxHeight: "150px",
+          maxWidth: "150px",
+        }}
+        src={white_logo_color_background}
+      />
       <div>CAMPAIGN</div>
       <div>CHARACTERS</div>
       <div>WORLDBUILDING</div>
@@ -21,36 +31,12 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
       <div>DICE</div>
       <div>PURCHASE</div>
       <div>DARK</div>
-      <div>
-        {user ? (
-          <>
-            <span className="welcome">
-              Welcome, <b>{user.name}</b>!
-            </span>
-            <Button size="small" onClick={onLogout} label="Log out" />
-          </>
-        ) : (
-          <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button
-              primary
-              size="small"
-              onClick={onCreateAccount}
-              label="Sign up"
-            />
-          </>
-        )}
-      </div>
+      <div>USERNAME</div>
     </div>
   </header>
 );
 
-Header.propTypes = {
-  user: PropTypes.shape({}),
-  onLogin: PropTypes.func.isRequired,
-  onLogout: PropTypes.func.isRequired,
-  onCreateAccount: PropTypes.func.isRequired,
-};
+Header.propTypes = {};
 
 Header.defaultProps = {
   user: null,
