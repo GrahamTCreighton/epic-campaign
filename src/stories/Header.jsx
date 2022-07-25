@@ -6,14 +6,6 @@ import Palette from "./designAssets/DesignAssetsColors";
 
 export const Header = () => (
   <header>
-    <img
-      css={{
-        maxHeight: "150px",
-        maxWidth: "150px",
-        borderBottomRightRadius: "10px",
-      }}
-      src={white_logo_color_background}
-    />
     <div
       css={{
         fontFamily: "Nunito Sans, Helvetica, Arial, sans-serif",
@@ -21,9 +13,18 @@ export const Header = () => (
         display: "flex",
         alignItems: "center",
         justifyContent: "spaceBetween",
-        backgroundColor: "#c3073f",
+        backgroundColor: Palette.epicRed,
       }}
     >
+      <img
+        css={{
+          maxHeight: "150px",
+          maxWidth: "150px",
+          borderBottomRightRadius: "10px",
+        }}
+        src={white_logo_color_background}
+        alt="epic campaign logo"
+      />
       <div>CAMPAIGN</div>
       <div>CHARACTERS</div>
       <div>WORLDBUILDING</div>
