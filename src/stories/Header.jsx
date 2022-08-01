@@ -6,7 +6,16 @@ import Palette from "./designAssets/DesignAssetsColors";
 
 export const Header = () => (
   <header>
-    <div
+    <img
+      css={{
+        maxHeight: "150px",
+        maxWidth: "150px",
+        borderBottomRightRadius: "10px",
+      }}
+      src={white_logo_color_background}
+      alt="epic campaign logo"
+    />
+    <nav
       css={{
         fontFamily: "Nunito Sans, Helvetica, Arial, sans-serif",
         padding: "15, 20",
@@ -14,17 +23,9 @@ export const Header = () => (
         alignItems: "center",
         justifyContent: "spaceBetween",
         backgroundColor: Palette.epicRed,
+        color: Palette.LightColor,
       }}
     >
-      <img
-        css={{
-          maxHeight: "150px",
-          maxWidth: "150px",
-          borderBottomRightRadius: "10px",
-        }}
-        src={white_logo_color_background}
-        alt="epic campaign logo"
-      />
       <div>CAMPAIGN</div>
       <div>CHARACTERS</div>
       <div>WORLDBUILDING</div>
@@ -33,6 +34,6 @@ export const Header = () => (
       <div>PURCHASE</div>
       <div>DARK</div>
       <div>USERNAME</div>
-    </div>
+    </nav>
   </header>
 );
