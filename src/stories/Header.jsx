@@ -8,7 +8,7 @@ export const Header = () => (
   <header>
     <nav
       css={{
-        fontFamily: "Montserrat, Helvetica, Arial, sans-serif",
+        fontFamily: "Montserrat",
         padding: "15, 20",
         display: "flex",
         alignItems: "center",
@@ -30,7 +30,7 @@ export const Header = () => (
       </a>
       <a
         css={{
-          fontFamily: "Montserrat, sans-serif",
+          fontFamily: "Montserrat",
         }}
         href="/"
       >
