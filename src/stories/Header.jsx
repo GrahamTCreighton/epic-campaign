@@ -30,7 +30,7 @@ export const Header = () => (
       </a>
       <a
         css={{
-          fontFamily: "",
+          fontFamily: "Montserrat, sans-serif",
         }}
         href="/"
       >
