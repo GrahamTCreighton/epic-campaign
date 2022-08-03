@@ -6,18 +6,9 @@ import Palette from "./designAssets/DesignAssetsColors";
 
 export const Header = () => (
   <header>
-    <img
-      css={{
-        maxHeight: "150px",
-        maxWidth: "150px",
-        borderBottomRightRadius: "10px",
-      }}
-      src={white_logo_color_background}
-      alt="epic campaign logo"
-    />
     <nav
       css={{
-        fontFamily: "Nunito Sans, Helvetica, Arial, sans-serif",
+        fontFamily: "Montserrat, Helvetica, Arial, sans-serif",
         padding: "15, 20",
         display: "flex",
         alignItems: "center",
@@ -26,14 +17,32 @@ export const Header = () => (
         color: Palette.LightColor,
       }}
     >
-      <div>CAMPAIGN</div>
-      <div>CHARACTERS</div>
-      <div>WORLDBUILDING</div>
-      <div>BLOG</div>
-      <div>DICE</div>
-      <div>PURCHASE</div>
-      <div>DARK</div>
-      <div>USERNAME</div>
+      <a href="/">
+        <img
+          css={{
+            maxHeight: "150px",
+            maxWidth: "150px",
+            borderBottomRightRadius: "10px",
+          }}
+          src={white_logo_color_background}
+          alt="epic campaign logo"
+        />
+      </a>
+      <a
+        css={{
+          fontFamily: "",
+        }}
+        href="/"
+      >
+        CAMPAIGN
+      </a>
+      <a href="/">CHARACTERS</a>
+      <a href="/">WORLDBUILDING</a>
+      <a href="/">BLOG</a>
+      <a href="/">DICE</a>
+      <a href="/">PURCHASE</a>
+      <a href="/">DARK</a>
+      <a href="/">USERNAME</a>
     </nav>
   </header>
 );
