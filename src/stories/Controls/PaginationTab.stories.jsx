@@ -5,7 +5,7 @@ import React from "react";
 import { PaginationTab } from "./PaginationTab";
 
 export default {
-  title: "Design System/Controls/PaginationTab",
+  title: "Design System/Controls/Pagination Tab",
   component: PaginationTab,
 };
 
