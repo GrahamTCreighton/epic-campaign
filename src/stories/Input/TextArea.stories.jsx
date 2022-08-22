@@ -1,36 +1,36 @@
-// FileUpload.Stories.jsx
+// TextArea.Stories.jsx
 
 import React from "react";
 
-import { FileUpload } from "./FileUpload";
+import { TextArea } from "./TextArea";
 
 export default {
-  title: "Design System/Input/File Upload",
-  component: FileUpload,
+  title: "Design System/Input/Text Area",
+  component: TextArea,
 };
 
-const Template = (args) => <FileUpload {...args} />;
+const Template = (args) => <TextArea {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   primary: true,
-  label: "FileUpload",
+  label: "TextArea",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  label: "FileUpload",
+  label: "TextArea",
 };
 
 export const Large = Template.bind({});
 Large.args = {
   size: "large",
-  label: "FileUpload",
+  label: "TextArea",
 };
 
 export const Small = Template.bind({});
 Small.args = {
   size: "small",
-  label: "FileUpload",
+  label: "TextArea",
 };

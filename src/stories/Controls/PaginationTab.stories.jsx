@@ -1,36 +1,36 @@
-// FileUpload.Stories.jsx
+// PaginationTab.Stories.jsx
 
 import React from "react";
 
-import { FileUpload } from "./FileUpload";
+import { PaginationTab } from "./PaginationTab";
 
 export default {
-  title: "Design System/Input/File Upload",
-  component: FileUpload,
+  title: "Design System/Controls/PaginationTab",
+  component: PaginationTab,
 };
 
-const Template = (args) => <FileUpload {...args} />;
+const Template = (args) => <PaginationTab {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   primary: true,
-  label: "FileUpload",
+  label: "PaginationTab",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  label: "FileUpload",
+  label: "PaginationTab",
 };
 
 export const Large = Template.bind({});
 Large.args = {
   size: "large",
-  label: "FileUpload",
+  label: "PaginationTab",
 };
 
 export const Small = Template.bind({});
 Small.args = {
   size: "small",
-  label: "FileUpload",
+  label: "PaginationTab",
 };
