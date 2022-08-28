@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { TextArea } from "./TextArea";
+import { TextArea } from "components/Input/TextArea";
 
 export default {
   title: "Design System/Input/Text Area",

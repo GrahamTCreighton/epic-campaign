@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { HomeLogo } from "./HomeLogo";
+import { HomeLogo } from "components/Controls/HomeLogo";
 
 export default {
   title: "Design System/Controls/Home Logo",

@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./Anchor.css";
 
 export const Anchor = ({ primary, backgroundColor, size, label, ...props }) => {
   return (

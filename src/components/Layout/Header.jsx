@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import React from "react";
 
-import white_logo_color_background from "../designAssets/DesignAssetsLogosVertical/white_logo_color_background.jpg";
-import Palette from "../designAssets/DesignAssetsColors";
+import white_logo_color_background from "stories/designAssets/DesignAssetsLogosVertical/white_logo_color_background.jpg";
+import Palette from "stories/designAssets/DesignAssetsColors";
 
 export const Header = () => (
   <header>

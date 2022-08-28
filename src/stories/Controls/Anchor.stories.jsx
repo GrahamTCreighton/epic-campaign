@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { Anchor } from "./Anchor";
+import { Anchor } from "components/Controls/Anchor";
 
 export default {
   title: "Design System/Controls/Anchor",

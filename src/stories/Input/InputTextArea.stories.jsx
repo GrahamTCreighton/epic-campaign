@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { InputTextArea } from "./InputTextArea";
+import { InputTextArea } from "components/Input/InputTextArea";
 
 export default {
   title: "Design System/Input/Input Text Area",

@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { Footer } from "./Footer";
+import { Footer } from "components/Layout/Footer";
 
 export default {
   title: "Layout/Footer",

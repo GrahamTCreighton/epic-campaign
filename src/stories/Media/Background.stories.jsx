@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { Background } from "./Background";
+import { Background } from "components/Media/Background";
 
 export default {
   title: "Media/Images/Background",

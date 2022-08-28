@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { Select } from "./Select";
+import { Select } from "components/Input/Select";
 
 export default {
   title: "Design System/Input/Select",

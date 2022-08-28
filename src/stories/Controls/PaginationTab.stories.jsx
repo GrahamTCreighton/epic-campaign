@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { PaginationTab } from "./PaginationTab";
+import { PaginationTab } from "components/Controls/PaginationTab";
 
 export default {
   title: "Design System/Controls/Pagination Tab",

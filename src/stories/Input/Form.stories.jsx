@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { Form } from "./Form";
+import { Form } from "components/Input/Form";
 
 export default {
   title: "Design System/Input/Form",

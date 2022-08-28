@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { DropAnchor } from "./DropAnchor";
+import { DropAnchor } from "components/Controls/DropAnchor";
 
 export default {
   title: "Design System/Controls/Drop Anchor",

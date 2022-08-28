@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { FormField } from "./FormField";
+import { FormField } from "components/Input/FormField";
 
 export default {
   title: "Design System/Input/Form Field",

@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import React from "react";
 import PropTypes from "prop-types";
-import Palette from "../designAssets/DesignAssetsColors";
+import Palette from "stories/designAssets/DesignAssetsColors";
 
 /**
  * Primary UI component for user interaction

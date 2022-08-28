@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { Checkbox } from "./Checkbox";
+import { Checkbox } from "components/Input/Checkbox";
 
 export default {
   title: "Design System/Input/Checkbox",
