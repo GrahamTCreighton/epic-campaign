@@ -85,7 +85,6 @@ Button.propTypes = {
    */
   onClick: PropTypes.func,
 };
-console.log("test");
 
 Button.defaultProps = {
   theme: "primary",
