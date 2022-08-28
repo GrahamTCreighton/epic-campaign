@@ -43,7 +43,7 @@ DefaultFill.args = {
 export const PrimaryFill = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 PrimaryFill.args = {
-  primary: true,
+  theme: "primary",
   label: "Primary Fill",
 };
 
@@ -54,6 +54,7 @@ SecondaryFill.args = {
 
 export const SuccessFill = Template.bind({});
 SuccessFill.args = {
+  theme: "success",
   label: "Success Fill",
 };
 

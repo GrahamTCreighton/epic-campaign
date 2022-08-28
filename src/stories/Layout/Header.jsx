@@ -14,7 +14,7 @@ export const Header = () => (
         alignItems: "center",
         justifyContent: "spaceBetween",
         backgroundColor: Palette.epicRed,
-        color: Palette.LightColor,
+        color: Palette.lightColor,
       }}
     >
       <a href="/">
