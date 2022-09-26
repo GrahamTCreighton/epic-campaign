@@ -48,6 +48,7 @@ PrimaryFill.args = {
 
 export const SecondaryFill = Template.bind({});
 SecondaryFill.args = {
+  theme: "secondaryFill",
   label: "Secondary Fill",
 };
 
@@ -59,11 +60,13 @@ SuccessFill.args = {
 
 export const DangerFill = Template.bind({});
 DangerFill.args = {
+  theme: "danger",
   label: "Danger Fill",
 };
 
 export const WarningFill = Template.bind({});
 WarningFill.args = {
+  theme: "warning",
   label: "Warning Fill",
 };
 

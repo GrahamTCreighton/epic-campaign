@@ -31,6 +31,18 @@ export const Button = ({ theme, size, label, ...props }) => {
       backgroundColor: Palette.successColor,
       color: Palette.lightColor,
     },
+    warning: {
+      backgroundColor: Palette.warningColor,
+      color: Palette.lightColor,
+    },
+    danger: {
+      backgroundColor: Palette.dangerColor,
+      color: Palette.lightColor,
+    },
+    secondaryFill: {
+      backgroundColor: Palette.epicRedSecondary,
+      color: Palette.lightColor,
+    },
   };
 
   const cssSizes = {
