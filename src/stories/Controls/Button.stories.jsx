@@ -16,27 +16,26 @@ const Template = (args) => <Button {...args} />;
 
 export const DefaultDefault = Template.bind({});
 DefaultDefault.args = {
+  theme: "defaultDefault",
   label: "Default Default",
 };
 
 export const DefaultPrimary = Template.bind({});
 DefaultPrimary.args = {
+  theme: "defaultPrimary",
   label: "Default Primary",
 };
 
 export const DefaultSecondary = Template.bind({});
 DefaultSecondary.args = {
+  theme: "defaultSecondary",
   label: "Default Secondary",
 };
 
 export const DefaultHighlight = Template.bind({});
 DefaultHighlight.args = {
+  theme: "defaultHighlight",
   label: "Default Highlight",
-};
-
-export const DefaultFill = Template.bind({});
-DefaultFill.args = {
-  label: "Default Fill",
 };
 
 export const PrimaryFill = Template.bind({});
@@ -72,16 +71,19 @@ WarningFill.args = {
 
 export const InfoFill = Template.bind({});
 InfoFill.args = {
+  theme: "fillInfo",
   label: "Info Fill",
 };
 
 export const OutlineDefault = Template.bind({});
 OutlineDefault.args = {
+  theme: "outlineDefault",
   label: "Outline Default",
 };
 
 export const OutlinePrimary = Template.bind({});
 OutlinePrimary.args = {
+  theme: "outlinePrimary",
   label: "Outline Primary",
 };
 

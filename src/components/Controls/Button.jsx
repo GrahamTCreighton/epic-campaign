@@ -18,6 +18,22 @@ export const Button = ({ theme, size, label, ...props }) => {
   };
 
   const themes = {
+    defaultDefault: {
+      color: Palette.darkColor,
+      backgroundColor: Palette.lightColor,
+    },
+    defaultPrimary: {
+      color: Palette.epicRed,
+      backgroundColor: Palette.lightColor,
+    },
+    defaultSecondary: {
+      color: Palette.epicRedSecondary,
+      backgroundColor: Palette.lightColor,
+    },
+    defaultHighlight: {
+      color: Palette.epicRed,
+      backgroundColor: Palette.accentLightTint80,
+    },
     primary: {
       color: Palette.lightColor,
       backgroundColor: Palette.epicRed,
@@ -42,6 +58,23 @@ export const Button = ({ theme, size, label, ...props }) => {
     secondaryFill: {
       backgroundColor: Palette.epicRedSecondary,
       color: Palette.lightColor,
+    },
+    fillInfo: {
+      backgroundColor: Palette.infoColor,
+      color: Palette.lightColor,
+    },
+    outlineDefault: {
+      backgroundColor: Palette.lightColor,
+      color: Palette.darkColor,
+      borderStyle: "solid",
+      borderWidth: "1px",
+    },
+    outlinePrimary: {
+      backgroundColor: Palette.lightColor,
+      color: Palette.epicRed,
+      borderStyle: "solid",
+      borderWidth: "1px",
+      borderColor: Palette.epicRed,
     },
   };
 

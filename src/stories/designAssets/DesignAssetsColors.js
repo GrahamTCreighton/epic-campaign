@@ -83,6 +83,7 @@ const Palette = {
   accentDarkTint80: "#f3e1e3",
   accentDarkTint90: "#f9f0f1",
 
+  darkColor: "#231C28",
   darckColorTint10: "#231c28",
   darkColorTint20: "#39333e",
   darkColorTint30: "#4f4953",
